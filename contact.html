@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"  lang="fr"><!--<![endif]-->
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+<head>
+<title>Les RFID et les bibliothèques</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link rel="Shortcut Icon" type="image/ico" href="images/favicon.png">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<header>
+	<img src="images/banner.jpg" alt="" title="">
+	<nav>
+	<ul>
+		<li><a href="index.html" class="lienactif"> Acceuil </a></li>
+		<li><a href="RFID.pdf"> Les RFID</a></li>
+		<li><a href="dossierdocumentaire.html"> Dossier documentaire</a></li>
+		<li><a href="contact.html"> Contact</a></li>
+	</ul>	
+	</nav>
+	</header>
+
+<section>
+	<article id="content">
+
+ <form action="traitement.php" method="post"> 
+		<fieldset>
+		<legend> Vos coordonnées </legend>
+			<p> 
+			<label for="nom">Nom :</label>
+			<input type="text" name="nom" id="nom" size="50" maxlength="50"placeholder="Entrez votre nom" required="required"/>
+			</p>
+			<p> 
+			<label for="prenom">  Prénom :</label>
+			<input type="text" name="prenom" id="prenom" size="50" maxlength="50" placeholder="Entrez votre prénom"required="required"/>
+			</p>
+			<p> 
+			<label for="tel">Téléphone :</label>
+			<input type="text" name="tel" id="tel" size="50" maxlength="50" placeholder="Entrez votre numéro de téléphone"required="required" />
+			</p>
+			<p> 
+			<label for="email">Email :</label>
+			<input type="email" name="mail" id="mail" size="50" maxlength="50" placeholder="Entrez votre email"required="required"/>
+			</p>
+		</fieldset>
+		<fieldset>
+		<legend>>Votre question</legend>
+			<p>
+			<textarea name="nomidentificateur" id="nomidentificateur"	cols="60" rows="10" > 
+			</textarea> 
+			</p>
+		</fieldset>
+<input type="submit" value="Envoyer" />
+	 </form>
+
+	 </article>
+</section>
+
+	<footer>
+
+	Site réalisé par Thibault Lalieu, pour l'institut Lallemand (2016-2017) 
+
+	</footer>
+
+</div><!--  Fin du div wrapper -->
+
+</body>
+</html>

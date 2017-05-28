@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+/* Mises en forme générales */
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 0.9em;
+	color: black;
+	background-color: silver;
+	margin-top: 3em;
+}
+
+p {
+	margin-top:1em;
+}
+
+h1{
+
+font-size: 1.9em;
+}
+
+
+/* wrapper */
+div#wrapper {
+	max-width:1200px;
+    min-width:800px;  
+	margin: auto;
+	padding:0;
+}
+
+/* header */
+header {
+	position:relative;
+	/* car le menu est positionné en absolu */
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-color: #648BD8;
+	padding-bottom:0.2em;
+}
+
+header img {
+	max-width: 100%;
+	height: auto; 
+	/*Pour que l'image du header s'adapte au header (responsive)*/
+}
+
+header nav {
+    position:absolute;
+	bottom:-1em;
+	left:0;
+/* Un positionnement relatif est également possible MAIS dans ce cas, il conserve l'espace qu'il aurait dû occuper et on observe un décalage entre le header et la section*/	
+	padding:0.5em;
+	font-size: 1.5em;
+}
+
+header nav a {
+	padding:0.9em;
+	color: white;
+	text-decoration: none!important;
+
+}
+
+header nav a:hover,.lienactif  {
+	position:relative;
+	bottom:6px;
+	font-weight:bolder;
+	font-size:110%;
+}
+
+
+/* content */
+article#content {
+float:left;
+width:80%; 
+text-align:justify;
+padding:5px;
+}
+
+article#content img {
+	margin:8px 8px 8px 0;
+	float:left;
+}
+
+article#content a {
+	color: #00386B;
+	font-weight: bolder;
+}
+
+article#content li {
+	list-style: square;
+}
+
+
+
+/* aside */
+aside {
+ float:right;
+padding:5px;
+width:16%; 
+}
+
+aside p {
+	border:dashed 1px #648BD8;
+	padding:5px;
+
+}
+aside span.webtype{
+    display:block;
+	font-weight: bold;
+	padding-bottom:0.5em;
+	}
+
+aside a {
+	color: #00386B;
+	font-weight: bolder;
+	display:block;
+	padding-top:0.5em;
+
+}
+
+
+
+/* footer */
+footer {
+	clear:both;
+	float:center;
+	margin-top: 30px;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border-color: #648BD8;
+}
+
+
+/*Formulaire*/
+form{
+	margin:auto;
+	width:820px;
+}
+fieldset {
+  margin-bottom: 2em ;
+  border : 2px solid #701f2e;
+  font-family: 'PT Serif Caption', serif;
+}
+
+fieldset p{
+	font-family:myriad pro;
+	font-size:1em;
+}
+
+legend{
+    
+	/*font-family: 'Monsieur La Doulaise', cursive;*/
+	color:#701f2e;
+	font-size:1.5em;
+	margin-left:1em;
+  }
+  
+label {
+  display: block;
+  width: 10em;
+  margin-left: 5em; 
+  cursor: pointer;
+  text-align:left;
+}
+
+#nom,#prenom,#mail,#tel {
+	background-image: url(../images/asterisk.png );
+	background-repeat:no-repeat;
+	background-position:top right;
+	margin-left: 2em; 
+}
+
+#nomidentificateur,#tel{
+	margin-left: 2em; 
+
+}
+/*Bouton*/
+input{
+	padding-left:2em;
+}
+input[type="submit"]{
+  background-color:#701f2e;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #8A0829;
+  float: left; 
+  cursor: pointer;
+/*Dimensions définies et bordures colorées*/
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+/*bords arrondis avec la propriété border-radius*/
+  -moz-box-shadow: 2px 2px 2px #BDBDBD;
+  -webkit-box-shadow: 2px 2px 2px #BDBDBD;
+  box-shadow: 2px 2px 2px #BDBDBD;
+/*effets d’ombre*/
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px #8A0829;
+  padding-left:0px;
+}
+/*carousel*/
+
+/*Tableau*/
+
+table{
+	border-collapse: collapse;
+	text-align: center;
+	background:silver;
+}
+
+caption{
+	font-size:2.5em;
+	text-align: center;
+}
+
+th{
+	border: 2.5px solid red;
+	padding:20px;
+
+}
+		
+td{
+	border: 1px solid black;
+	padding:20px;
+
+}
+
+
+
+
